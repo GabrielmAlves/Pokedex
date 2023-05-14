@@ -1,20 +1,20 @@
 @font-face {
     font-family: myFirstFont;
-    src: url(/fonts/Neucha-Regular.ttf);
+    src: url(/fonts/Neucha-Regular.ttf); /*font used in the project*/
 }
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'myFirstFont', cursive;  
 }
 
 main{
-    display: inline-block;
+    display: inline-block; /*used so the pokédex don't be using all the page's space*/
     margin: 2%;
     padding: 15px;
-    position: relative;
+    position: relative; /*used with so the pokémon image can have an absolute position*/
 }
 
 body{
@@ -31,11 +31,65 @@ body{
 .imagemPoke{
     position: absolute;
     left: 50%;
-    bottom: 55%;
-    transform: translate(-67%,10%);
+    bottom: 55%; /*both left and bottom used with % thinking about other devices*/
+    transform: translate(-67%,10%); /*same king of thinking here and height*/
     height: 14%;
 }
 
-/* .pokedex:hover{
-    box-shadow: 10px 10px 5px 12px red;
-} */
+.dadosPoke{
+    position: absolute;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px,5vw,25px);
+    font-weight: 100;
+}
+
+.nomePoke{
+    color: #3a444d;
+    text-transform: uppercase;
+}
+
+.form{
+    position: absolute;
+    top: 68%;
+    left: 14%;
+    width: 65%;
+}
+
+.inputForm{
+    width: 100%;
+    border-radius: 10px;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    color: #0F2029;
+    font-size: clamp(8px,5vw,1rem);
+}
+
+.botoes{
+    position: absolute;
+    bottom: 12.5%;
+    display: flex;
+    gap: 10px;
+    left: 50%;
+    width: 65%;
+    transform: translate(-55%,0);
+}
+
+.botao{
+    padding: 4%;
+    border-radius: 10px;
+    font-size: clamp(8px,5vw,1rem);
+    font-weight: 100;
+}
+
+.botao:active{
+    background-color: #0F2029;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.botao:hover{
+    background-color: #0F2029;
+    color: white;
+}
