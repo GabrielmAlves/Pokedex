@@ -92,4 +92,5 @@ body{
 .botao:hover{
     background-color: #0F2029;
     color: white;
+    cursor: pointer;
 }
